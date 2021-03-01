@@ -82,22 +82,22 @@ public class AbstractLinkAccountCommand<P, C extends ICommandUtil<P>> {
 
     public enum Message implements CommandMessage {
         ALREADY_LINKED(
-                "&cYour account is already linked!\n" +
-                        "&cIf you want to link to a different account, run &6/unlinkaccount&c and try it again."
+                "&cIl tuo account è già stato collegato!\n" +
+                        "&cSe vuoi collegarlo ad un altro account digita &6/unlinkaccount&c e riprova."
         ),
-        JAVA_USAGE("&cUsage: /linkaccount <gamertag>"),
+        JAVA_USAGE("&cUtilizzo: /linkaccount <gamertag>"),
         LINK_REQUEST_CREATED(
-                "&aLog in as %s on Bedrock and run &6/linkaccount %s %s\n" +
-                        "&cWarning: Any progress on your Bedrock account will not be carried over! Save any items in your inventory first.\n" +
-                        "&cIf you change your mind you can run &6/unlinkaccount&c to get your progess back."
+                "&aEntra con %s su Bedrock e digita &6/linkaccount %s %s\n" +
+                        "&cAttenzione: Ogni progresso sul tuo account Bedrock non verrà trasferito!\n" +
+                        "&cSe cambi idea puoi sempre digitare &6/unlinkaccount&c per tornare indietro."
         ),
-        BEDROCK_USAGE("&cStart the process from Java! Usage: /linkaccount <gamertag>"),
-        LINK_REQUEST_EXPIRED("&cThe code you entered is expired! Run &6/linkaccount&c again on your Java account"),
-        LINK_REQUEST_COMPLETED("You are successfully linked to %s!\nIf you want to undo this run /unlinkaccount"),
-        LINK_REQUEST_ERROR("&cAn error occurred while linking. " + CommonMessage.CHECK_CONSOLE),
-        INVALID_CODE("&cInvalid code! Please check your code or run the &6/linkaccount&c command again on your Java account."),
-        NO_LINK_REQUESTED("&cThis player has not requested an account link! Please log in on Java and request one with &6/linkaccount"),
-        LINK_REQUEST_DISABLED("&cLinking is not enabled on this server.");
+        BEDROCK_USAGE("&cInizia il processo con la Java Edition! Utilizzo: /linkaccount <gamertag>"),
+        LINK_REQUEST_EXPIRED("&cIl codice inserito è scaduto! Digita &6/linkaccount&c di nuovo sul tuo account Java"),
+        LINK_REQUEST_COMPLETED("Il tuo account è stato collegato con successo a %s!\nSe vuoi annullare questa cosa digita /unlinkaccount"),
+        LINK_REQUEST_ERROR("&cC'è stato un errore durante il collegamento. " + CommonMessage.CHECK_CONSOLE),
+        INVALID_CODE("&cCodice non valido! Per favore controlla il codice o digita nuovamente &6/linkaccount&c sul tuo account Java."),
+        NO_LINK_REQUESTED("&cQuesto account non ha richiesto nessun collegamento! Per favore entra con il tuo account Java e richiedilo con &6/linkaccount"),
+        LINK_REQUEST_DISABLED("&cCollegamento degli account non attivato su questo server.");
 
         @Getter private final String message;
 
