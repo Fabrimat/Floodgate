@@ -5,8 +5,8 @@ import org.geysermc.floodgate.command.CommandMessage;
 
 public enum CommonMessage implements CommandMessage {
     NOT_A_PLAYER("Please head over to your Minecraft Account and link from there."),
-    CHECK_CONSOLE("Please check the console for more info!"),
-    IS_LINKED_ERROR("&cError while checking if the given player is linked. " + CHECK_CONSOLE);
+    CHECK_CONSOLE("Contatta un amministratore!"),
+    IS_LINKED_ERROR("&cErrore durante il controllo di un giocatore. " + CHECK_CONSOLE);
 
     @Getter private final String message;
 
