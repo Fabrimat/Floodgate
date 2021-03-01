@@ -40,10 +40,10 @@ public class AbstractUnlinkAccountCommand<P, C extends ICommandUtil<P>> {
     }
 
     public enum Message implements CommandMessage {
-        NOT_LINKED("&cYour account isn't linked"),
-        UNLINK_SUCCESS("&cUnlink successful! Rejoin to return to your Bedrock account"),
-        UNLINK_ERROR("&cAn error occurred while unlinking player! " + CommonMessage.CHECK_CONSOLE),
-        LINKING_NOT_ENABLED("&cLinking is not enabled on this server");
+        NOT_LINKED("&cIl tuo account non è collegato"),
+        UNLINK_SUCCESS("&cCollegamento rimosso con successo! Rientra per tornare al tuo account Bedrock"),
+        UNLINK_ERROR("&cC'è stato un errore durante la rimozione del collegamento. " + CommonMessage.CHECK_CONSOLE),
+        LINKING_NOT_ENABLED("&cCollegamento degli account non attivato su questo server.");
 
         @Getter
         private final String message;
